@@ -51,7 +51,6 @@ plot(LASI_yearly_zccm$Return, xlab=" Period", ylab="Return", main="The LuSE LASI
 
 #Interactively we can visualise the data with the dygraphs package
 
-
 dygraph(LASI_yearly$Return, main = "Yearly LASI Return") %>%
   dyAxis("y", label="Return")%>%
   dyAxis("x", label= "Year")
