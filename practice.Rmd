@@ -6,7 +6,7 @@ output: github_document
 ---
 
 
-```{r}
+```{r,eval=FALSE}
 ## loading the required packages
 library(xts)
 library(PerformanceAnalytics)
@@ -30,13 +30,8 @@ LASI_monthly_zccm <- read.csv("LUSE_monthly2.csv", header = TRUE)
 ```
 
 
-```{r}
-# Data attributes 
-str(LASI_monthly)
+```{r, eval=FALSE}
 # Since the Year and the ALSI have been entered as factors rather than as date and numeric classes respectively, we have to convert them to their appropriate class to be able to do the computations we desire.
-```
-
-```{r}
 # convert the data frame to an xts
 LASI_monthly <- xts(x = LASI_monthly[,-1], order.by = as.Date(LASI_monthly[,1]))
 
@@ -45,11 +40,9 @@ LASI_monthly_zccm <- xts(x = LASI_monthly_zccm[,-1], order.by = as.Date(LASI_mon
 LASI_yearly <- xts(x = LASI_yearly[,-1], order.by = as.Date(LASI_yearly[,1]))
 
 LASI_yearly_zccm <- xts(x = LASI_yearly_zccm[,-1], order.by = as.Date(LASI_yearly_zccm[,1]))
-
-str(LASI_monthly)
 ```
 
-```{r}
+```{r,eval=FALSE}
 # quick plots to visualise the data
 
 plot(LASI_monthly$Return, xlab=" Period", ylab="Return",main="The LuSE LASI Monthly Returns For the Period 2005-2014
@@ -65,7 +58,7 @@ plot(LASI_yearly_zccm$Return, xlab=" Period", ylab="Return", main="The LuSE LASI
 ```
 
 
-```{r}
+```{r,eval=FALSE}
 #Interactively we can visualise the data with the dygraphs package
 
 dygraph(LASI_yearly$Return, main = "Yearly LASI Return") %>%
