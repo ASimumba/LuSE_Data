@@ -6,7 +6,7 @@ output: github_document
 ---
 
 
-```{r,echo=TRUE}
+```{r}
 ## loading the required packages
 library(xts)
 library(PerformanceAnalytics)

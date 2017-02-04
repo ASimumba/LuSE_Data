@@ -1,7 +1,7 @@
 Lusaka Securities Exchange Overview
 ================
 Aaron Simumba
-2017-02-02
+2017-02-05
 
 ``` r
 ## loading the required packages
