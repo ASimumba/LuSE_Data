@@ -6,7 +6,7 @@ output: github_document
 ---
 
 
-```{r}
+```{r, results='hide', message=FALSE}
 ## loading the required packages
 library(xts)
 library(PerformanceAnalytics)
@@ -58,12 +58,5 @@ plot(LASI_yearly_zccm$Return, xlab=" Period", ylab="Return", main="The LuSE LASI
 ```
 
 
-```{r}
-#Interactively we can visualise the data with the dygraphs package
 
-dygraph(LASI_yearly$Return, main = "Yearly LASI Return") %>%
-  dyAxis("y", label="Return")%>%
-  dyAxis("x", label= "Year")
-
-```
 

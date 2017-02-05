@@ -1,34 +1,12 @@
 Lusaka Securities Exchange Overview
 ================
 Aaron Simumba
-2017-02-05
+2017-02-06
 
 ``` r
 ## loading the required packages
 library(xts)
-```
-
-    ## Loading required package: zoo
-
-    ## 
-    ## Attaching package: 'zoo'
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     as.Date, as.Date.numeric
-
-``` r
 library(PerformanceAnalytics)
-```
-
-    ## 
-    ## Attaching package: 'PerformanceAnalytics'
-
-    ## The following object is masked from 'package:graphics':
-    ## 
-    ##     legend
-
-``` r
 library(dygraphs)
 ```
 
@@ -87,13 +65,3 @@ plot(LASI_yearly_zccm$Return, xlab=" Period", ylab="Return", main="The LuSE LASI
 ```
 
 ![](practice_files/figure-markdown_github/unnamed-chunk-4-4.png)
-
-``` r
-#Interactively we can visualise the data with the dygraphs package
-
-dygraph(LASI_yearly$Return, main = "Yearly LASI Return") %>%
-  dyAxis("y", label="Return")%>%
-  dyAxis("x", label= "Year")
-```
-
-![](practice_files/figure-markdown_github/unnamed-chunk-5-1.png)
