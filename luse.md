@@ -43,25 +43,25 @@ plot(LASI_monthly$Return, xlab=" Period", ylab="Return",main="The LuSE LASI Mont
      (excl. ZCCM-IH)",cex.main =1, font.main=2)
 ```
 
-![](practice_files/figure-markdown_github/unnamed-chunk-4-1.png)
+![](luse_files/figure-markdown_github/unnamed-chunk-4-1.png)
 
 ``` r
 plot(LASI_monthly_zccm$Return,xlab=" Period", ylab="Return", main="The LuSE LASI Monthly Returns For the Period 2005-2014 
      (incl. ZCCM-IH)",cex.main =1, font.main=2)
 ```
 
-![](practice_files/figure-markdown_github/unnamed-chunk-4-2.png)
+![](luse_files/figure-markdown_github/unnamed-chunk-4-2.png)
 
 ``` r
 plot(LASI_yearly$Return,xlab=" Period", ylab="Return", main="The LuSE LASI yearly Returns For the Period 1997-2014 
      (excl. ZCCM-IH)",cex.main =1, font.main=2)
 ```
 
-![](practice_files/figure-markdown_github/unnamed-chunk-4-3.png)
+![](luse_files/figure-markdown_github/unnamed-chunk-4-3.png)
 
 ``` r
 plot(LASI_yearly_zccm$Return, xlab=" Period", ylab="Return", main="The LuSE LASI yearly Returns For the Period 1997-2014 
      (incl. ZCCM-IH)",cex.main =1, font.main=2)
 ```
 
-![](practice_files/figure-markdown_github/unnamed-chunk-4-4.png)
+![](luse_files/figure-markdown_github/unnamed-chunk-4-4.png)
